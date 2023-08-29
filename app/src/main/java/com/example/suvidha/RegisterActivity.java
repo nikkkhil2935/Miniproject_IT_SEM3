@@ -51,7 +51,7 @@ public class RegisterActivity extends AppCompatActivity {
                         if (isValid(password)) {
                             db.register(username,email,password);
                             Toast.makeText(getApplicationContext(), "Record Inserted", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(RegisterActivity.this,LoginActivity.class));
+                            startActivity(new Intent(RegisterActivity.this,HomeActivity.class));
                         }
                     else {
                         Toast.makeText(getApplicationContext(), "Password Must contain at least 8 characters", Toast.LENGTH_SHORT).show();
